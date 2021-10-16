@@ -4,7 +4,7 @@ An index is an entity that gathers a set of documents with its own settings.
 
 It can be comparable to a table in `SQL`, or a collection in MongoDB.
 
-An index is defined by an `uid` and contains the following information:
+An index is defined by a `uid` and contains the following information:
 
 - One <clientGlossary word="primary key"/>
 - Default settings that can be configured as needed: relevancy rules, synonyms, stop words, and field properties.
