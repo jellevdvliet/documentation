@@ -61,11 +61,11 @@ An array of strings containing the attributes that can be used to sort search re
 
 ```json
 {
-  "updateId": 1
+  "uid": 1
 }
 ```
 
-This `updateId` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current update](/reference/api/updates.md).
 
 ## Reset sortable attributes
 
@@ -91,8 +91,8 @@ An empty array (`[]`).
 
 ```json
 {
-  "updateId": 1
+  "uid": 1
 }
 ```
 
-This `updateId` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current update](/reference/api/updates.md).

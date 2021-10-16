@@ -64,11 +64,11 @@ An object that contains all synonyms and their associated words.
 
 ```json
 {
-  "updateId": 1
+  "uid": 1
 }
 ```
 
-This `updateId` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current update](/reference/api/updates.md).
 
 ## Reset synonyms
 
@@ -94,8 +94,8 @@ Empty object : `{}`
 
 ```json
 {
-  "updateId": 1
+  "uid": 1
 }
 ```
 
-This `updateId` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current update](/reference/api/updates.md).

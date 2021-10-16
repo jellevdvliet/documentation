@@ -63,11 +63,11 @@ An array of strings that contains attributes of an index to display.
 
 ```json
 {
-  "updateId": 1
+  "uid": 1
 }
 ```
 
-This `updateId` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current update](/reference/api/updates.md).
 
 ## Reset displayed attributes
 
@@ -93,8 +93,8 @@ All attributes found in the documents added to the index.
 
 ```json
 {
-  "updateId": 1
+  "uid": 1
 }
 ```
 
-This `updateId` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current update](/reference/api/updates.md).

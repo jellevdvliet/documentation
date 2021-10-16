@@ -17,7 +17,7 @@ Currently, these are MeiliSearch's asynchronous operations:
 
 ## Update workflow
 
-1. When you make an update request, MeiliSearch puts it in the update queue, sets the request `status` to `enqueued` and returns an `updateId`
+1. When you make an update request, MeiliSearch puts it in the update queue, sets the request `status` to `enqueued` and returns an `uid`
 2. When the queue reaches your update request, MeiliSearch begins processing it and changes the request `status` to `processing`
 3. Once the update has been finalized, MeiliSearch marks it as `processed`, if it was successful, or `failed`, in case the update failed
 4. Requests marked as `processed` are not deleted and will remain visible in [the operation list](/reference/api/updates.md#get-all-update-status)
@@ -28,10 +28,10 @@ sequenceDiagram
   participant Q as Queue
   participant M as MeiliSearch
   C->>Q: enqueue first update
-  Q-->>C: return updateId: 1
+  Q-->>C: return uid: 1
   Q-->>+M: begin update 1
   C->>Q: enqueue second update
-  Q-->>C: return updateId: 2
+  Q-->>C: return uid: 2
   M->>-Q: dequeue update 1
   Q-->>+M: begin update 2
   M->>-Q: dequeue update 2
@@ -45,14 +45,14 @@ While dumps and updates are both asynchronous processes, they use separate queue
 
 ## Understanding updates
 
-After you have requested an update, you can use the [update API endpoint](/reference/api/updates.md) to find out the status of your request. To do so, you will need your request's `updateId`.
+After you have requested an update, you can use the [update API endpoint](/reference/api/updates.md) to find out the status of your request. To do so, you will need your request's `uid`.
 
 ### Response
 
 The response you get from the [update API endpoint](/reference/api/updates.md) will always include the following fields:
 
 - `status`: the state of the operation (`enqueued`, `processing`, `processed`, or `failed`)
-- `updateId`: the id of the update
+- `uid`: the id of the update
 - `type`: the type of the operation, including its name and number
 - `enqueuedAt`: the date when the operation was added to the queue
 
@@ -74,14 +74,14 @@ Update responses always contain a field indicating the request's current `status
 
 ### Examples
 
-Suppose you add a new document to your instance using the [documents API endpoint](/reference/api/documents.md#add-or-replace-documents) and receive an `updateId`.
+Suppose you add a new document to your instance using the [documents API endpoint](/reference/api/documents.md#add-or-replace-documents) and receive an `uid`.
 
 When you query the update endpoint using this id, you see that it has been enqueued:
 
 ```json
 {
   "status": "enqueued",
-  "updateId": 1,
+  "uid": 1,
   "type": {
     "name": "DocumentsAddition",
   },
@@ -94,7 +94,7 @@ Later, you check the request's status one more time. It was successfully process
 ```json
 {
   "status": "processed",
-  "updateId": 1,
+  "uid": 1,
   "type": {
     "name": "DocumentsAddition",
     "number": 19653
@@ -110,7 +110,7 @@ Had the update failed, the response would have included an error message:
 ```json
 {
   "status": "failed",
-  "updateId": 1,
+  "uid": 1,
   "type": {
     "name": "DocumentsAddition",
   },

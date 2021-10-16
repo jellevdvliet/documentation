@@ -62,11 +62,11 @@ If a list of stop-words already exists it will be overwritten (_replaced_).
 
 ```json
 {
-  "updateId": 1
+  "uid": 1
 }
 ```
 
-This `updateId` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current update](/reference/api/updates.md).
 
 ## Reset stop-words
 
@@ -92,8 +92,8 @@ Empty array: `[]`
 
 ```json
 {
-  "updateId": 1
+  "uid": 1
 }
 ```
 
-This `updateId` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current update](/reference/api/updates.md).
