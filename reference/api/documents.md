@@ -140,7 +140,7 @@ The body is composed of a **JSON array** of documents.
 }
 ```
 
-This `uid` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current task](/reference/api/tasks.md).
 
 ## Add or update documents
 
@@ -195,7 +195,7 @@ The documents are matched because they have the same `primaryKey` value `id: 287
 }
 ```
 
-This `uid` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current task](/reference/api/tasks.md).
 
 ## Delete all documents
 
@@ -221,7 +221,7 @@ Delete all documents in the specified index.
 }
 ```
 
-This `uid` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current task](/reference/api/tasks.md).
 
 ## Delete one document
 
@@ -248,7 +248,7 @@ Delete one document based on its unique id.
 }
 ```
 
-This `uid` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current task](/reference/api/tasks.md).
 
 ## Delete documents
 
@@ -282,4 +282,4 @@ The body must be a **JSON Array** with the unique id's of the documents to delet
 }
 ```
 
-This `uid` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current task](/reference/api/tasks.md).

@@ -60,7 +60,7 @@ An array of strings containing the attributes that can be used as filters at que
 }
 ```
 
-This `uid` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current task](/reference/api/tasks.md).
 
 ## Reset filterable attributes
 
@@ -90,4 +90,4 @@ An empty array (`[]`).
 }
 ```
 
-This `uid` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current task](/reference/api/tasks.md).

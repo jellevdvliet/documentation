@@ -75,9 +75,9 @@ Most actions in MeiliSearch are [asynchronous](/learn/advanced/asynchronous_upda
 
 Asynchronous actions return a JSON object that contains only a `uid` attribute. This is a **successful response**, indicating that the operation has been taken into account, but may not have been executed yet.
 
-You can check the status of the operation via the `uid` and the [get update status route](/reference/api/updates.md). Checking the update status of an operation is never mandatory, but can prove useful in tracing the origin of errors or unexpected behavior.
+You can check the status of the operation via the `uid` and the [get task status route](/reference/api/tasks.md). Checking the update status of an operation is never mandatory, but can prove useful in tracing the origin of errors or unexpected behavior.
 
-See our guide on [asynchronous updates](/learn/advanced/asynchronous_updates.md) or the [updates API reference](/reference/api/updates.md) for more information.
+See our guide on [asynchronous updates](/learn/advanced/asynchronous_updates.md) or the [tasks API reference](/reference/api/tasks.md) for more information.
 
 ## Search
 

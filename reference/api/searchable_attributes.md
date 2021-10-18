@@ -74,7 +74,7 @@ A match in title will make a document more relevant than another document with a
 }
 ```
 
-This `uid` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current task](/reference/api/tasks.md).
 
 ## Reset searchable attributes
 
@@ -104,4 +104,4 @@ All attributes found in the documents added to the index.
 }
 ```
 
-This `uid` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current task](/reference/api/tasks.md).

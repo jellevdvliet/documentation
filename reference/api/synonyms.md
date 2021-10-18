@@ -68,7 +68,7 @@ An object that contains all synonyms and their associated words.
 }
 ```
 
-This `uid` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current task](/reference/api/tasks.md).
 
 ## Reset synonyms
 
@@ -98,4 +98,4 @@ Empty object : `{}`
 }
 ```
 
-This `uid` allows you to [track the current update](/reference/api/updates.md).
+This `uid` allows you to [track the current task](/reference/api/tasks.md).
