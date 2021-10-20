@@ -136,11 +136,15 @@ The body is composed of a **JSON array** of documents.
 
 ```json
 {
-  "uid": 1
+    "uid": 0,
+    "indexUid": "movies",
+    "status": "enqueued",
+    "type": "documentsAddition",
+    "enqueuedAt": "2021-08-11T09:25:53.000000Z"
 }
 ```
 
-This `uid` allows you to [track the current task](/reference/api/tasks.md).
+You can use this `uid` to get more details on [the status of the task](/reference/api/tasks.md#get-task-status-by-uid).
 
 ## Add or update documents
 
@@ -191,11 +195,15 @@ The documents are matched because they have the same `primaryKey` value `id: 287
 
 ```json
 {
-  "uid": 1
+    "uid": 0,
+    "indexUid": "movies",
+    "status": "enqueued",
+    "type": "documentsAddition",
+    "enqueuedAt": "2021-08-11T09:25:53.000000Z"
 }
 ```
 
-This `uid` allows you to [track the current task](/reference/api/tasks.md).
+You can use this `uid` to get more details on [the status of the task](/reference/api/tasks.md#get-task-status-by-uid).
 
 ## Delete all documents
 
@@ -217,11 +225,15 @@ Delete all documents in the specified index.
 
 ```json
 {
-  "uid": 1
+    "uid": 0,
+    "indexUid": "movies",
+    "status": "enqueued",
+    "type": "documentsDeletion",
+    "enqueuedAt": "2021-08-11T09:25:53.000000Z"
 }
 ```
 
-This `uid` allows you to [track the current task](/reference/api/tasks.md).
+You can use this `uid` to get more details on [the status of the task](/reference/api/tasks.md#get-task-status-by-uid).
 
 ## Delete one document
 
@@ -244,9 +256,15 @@ Delete one document based on its unique id.
 
 ```json
 {
-  "uid": 1
+    "uid": 0,
+    "indexUid": "movies",
+    "status": "enqueued",
+    "type": "documentsDeletion",
+    "enqueuedAt": "2021-08-11T09:25:53.000000Z"
 }
 ```
+
+You can use this `uid` to get more details on [the status of the task](/reference/api/tasks.md#get-task-status-by-uid).
 
 This `uid` allows you to [track the current task](/reference/api/tasks.md).
 
@@ -278,8 +296,12 @@ The body must be a **JSON Array** with the unique id's of the documents to delet
 
 ```json
 {
-  "uid": 1
+    "uid": 0,
+    "indexUid": "movies",
+    "status": "enqueued",
+    "type": "documentsDeletion",
+    "enqueuedAt": "2021-08-11T09:25:53.000000Z"
 }
 ```
 
-This `uid` allows you to [track the current task](/reference/api/tasks.md).
+You can use this `uid` to get more details on [the status of the task](/reference/api/tasks.md#get-task-status-by-uid).
