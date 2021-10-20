@@ -17,6 +17,10 @@ We use [Amplitude](https://amplitude.com/amplitude-analytics) to collect usage d
 - Technical specs of the device running MeiliSearch
 - Database size per instance
 - Number of documents per instance
+- Number of calls to `indexes/:indexUid/tasks` per instance
+- Number of calls to `indexes/:indexUid/tasks/:taskUid` per instance
+- Number of calls to `tasks` per instance
+- Number of calls to `tasks/:taskUid` per instance
 
 **We will absolutely never identify users, track users, or collect private information**, including IP address, email, or website URLs. All of our data collection is **GDPR-compliant** and **secure**.
 

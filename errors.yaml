@@ -56,8 +56,6 @@ errors:
     description: "The provided ranking rules are invalid. For more information on ranking rule configuration, check our [relevancy guide](https://docs.meilisearch.com/learn/core_concepts/relevancy.html#ranking-rules)"
   - code: invalid_geo_field
     description: "The provided `_geo` field of one or more documents is invalid. Read more about `_geo` and how to troubleshoot it in [our dedicated guide](https://docs.meilisearch.com/reference/features/geosearch.html)."
-  - code: invalid_token
-    description: "The provided master key does not match the value configured on the server-side."  
   - code: task_not_found
     description: "The requested task was not found as it does not exist." 
 ...
